@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overview · Example CLI User Guide</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <p class="brand">Example CLI</p>
+      <p class="brand-sub">User Guide</p>
+      <nav>
+        <a href="index.html" class="active">Overview</a>
+        <a href="getting-started.html">Getting Started</a>
+        <a href="troubleshooting.html">Troubleshooting</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <h1>Overview</h1>
+      <p>
+        Example CLI is a command-line tool for packaging, previewing, and
+        publishing static sites. It gives you a single command to go from a
+        folder of files to a live URL, with sensible defaults and no
+        configuration required to get started.
+      </p>
+
+      <h2>What it does</h2>
+      <ul>
+        <li><strong>Package</strong> — bundle your project into a deployable artifact.</li>
+        <li><strong>Preview</strong> — serve your site locally with live reload.</li>
+        <li><strong>Publish</strong> — push the artifact to a hosting target.</li>
+      </ul>
+
+      <h2>Who it's for</h2>
+      <p>
+        Anyone maintaining a static site or documentation set who wants a
+        repeatable publish step without wiring up a build pipeline by hand.
+      </p>
+
+      <div class="callout">
+        <strong>New here?</strong> Head to
+        <a href="getting-started.html">Getting Started</a> to install the CLI
+        and publish your first site in a few minutes.
+      </div>
+
+      <h2>How it fits together</h2>
+      <p>
+        A typical project has a source folder, an optional config file, and a
+        target. Example reads the source, produces an artifact, and hands it to
+        the target you choose.
+      </p>
+      <table>
+        <thead>
+          <tr><th>Concept</th><th>Description</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Source</td><td>The folder containing your site files.</td></tr>
+          <tr><td>Artifact</td><td>The packaged output Example produces.</td></tr>
+          <tr><td>Target</td><td>Where the artifact is published.</td></tr>
+        </tbody>
+      </table>
+
+      <p class="footer">Example CLI is a fictional product used for a GitHub Pages test.</p>
+    </main>
+  </div>
+</body>
+</html>

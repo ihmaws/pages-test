@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting Started · Example CLI User Guide</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <p class="brand">Example CLI</p>
+      <p class="brand-sub">User Guide</p>
+      <nav>
+        <a href="index.html">Overview</a>
+        <a href="getting-started.html" class="active">Getting Started</a>
+        <a href="troubleshooting.html">Troubleshooting</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <h1>Getting Started</h1>
+      <p>This guide takes you from install to your first published site.</p>
+
+      <h2>1. Install</h2>
+      <p>Install the CLI with your package manager of choice:</p>
+      <pre><code>npm install -g example-cli</code></pre>
+      <p>Verify the install:</p>
+      <pre><code>example --version</code></pre>
+
+      <h2>2. Create a project</h2>
+      <p>Scaffold a new project in the current directory:</p>
+      <pre><code>example init my-site
+cd my-site</code></pre>
+
+      <h2>3. Preview locally</h2>
+      <p>Start the local dev server with live reload:</p>
+      <pre><code>example preview</code></pre>
+      <p>Open <code>http://localhost:4000</code> to see your site.</p>
+
+      <div class="callout">
+        Changes to files in the source folder reload the browser
+        automatically. No restart needed.
+      </div>
+
+      <h2>4. Publish</h2>
+      <p>Package and publish to your configured target:</p>
+      <pre><code>example publish</code></pre>
+
+      <div class="callout warn">
+        <strong>Heads up:</strong> the first publish creates the target if it
+        doesn't exist. Double-check the target name in <code>example.config.json</code>
+        before running this in a shared account.
+      </div>
+
+      <h2>Next steps</h2>
+      <ul>
+        <li>Hit a snag? See <a href="troubleshooting.html">Troubleshooting</a>.</li>
+        <li>Common questions are answered in the <a href="faq.html">FAQ</a>.</li>
+      </ul>
+
+      <p class="footer">Example CLI is a fictional product used for a GitHub Pages test.</p>
+    </main>
+  </div>
+</body>
+</html>
